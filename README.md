@@ -481,7 +481,7 @@ Don't confuse `^` with power: in Java `2 ^ 3` is `1` (XOR), not 8. Use `Math.pow
 
 ## 17. Using the Library
 
-Package `com.psp.pos.shared.xor`, pure Java 17, Android-compatible. It depends only on [Base-Conversion](https://github.com/Mr-Alireza82/Base-Conversion) (for hex ↔ bytes ↔ bits).
+Package `io.github.mralireza82.xor`, pure Java 17. It depends only on [Base-Conversion](https://github.com/Mr-Alireza82/Base-Conversion) (for hex ↔ bytes ↔ bits).
 
 | Class | Use it for |
 |---|---|
@@ -510,13 +510,13 @@ SimpleXor.xorHex("C3", "A5");                                     // "66"
 
 **How it is tested:** every example in this article is a test case; the five properties of [§6](#6-the-five-properties) are checked on 1,000 random inputs of up to 32 bytes; and the simple way is compared with the quick way on every one of them.
 
-**Run it yourself:** the code is in [`src/main/java`](src/main/java/com/psp/pos/shared/xor) and the tests in [`src/test/java`](src/test/java/com/psp/pos/shared/xor). With Java 17 or newer installed:
+**Run it yourself:** the code is in [`src/main/java`](src/main/java/io/github/mralireza82/xor) and the tests in [`src/test/java`](src/test/java/io/github/mralireza82/xor). With Java 17 or newer installed:
 
 ```bash
 ./gradlew test        # Windows: gradlew.bat test
 ```
 
-**Use it in your project** (Gradle, through [JitPack](https://jitpack.io/#Mr-Alireza82/XOR); Base-Conversion comes with it automatically):
+**Use it in your project** (Gradle, through [JitPack](https://jitpack.io/#Mr-Alireza82/XOR)):
 
 ```kotlin
 repositories {
@@ -525,7 +525,7 @@ repositories {
 }
 
 dependencies {
-    implementation("com.github.Mr-Alireza82:XOR:v1.0.0")
+    implementation("com.github.Mr-Alireza82:XOR:v1.0.1")
 }
 ```
 
@@ -634,7 +634,7 @@ XOR mixes data with a key, but alone it is easy to break. The next step is a rea
 
 - [Base Conversion — Bits, Bytes and the Four Number Bases](https://github.com/Mr-Alireza82/Base-Conversion)
 - [ANSI X9.19 — Retail MAC Algorithm](https://github.com/Mr-Alireza82/ANSI-X9.19-Retail-MAC-Algorithm)
-- DES — Data Encryption Standard *(next)*
+- [DES and Triple DES — Data Encryption Standard](https://github.com/Mr-Alireza82/DES) *(next)*
 
 ---
 

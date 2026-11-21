@@ -1,6 +1,6 @@
-package com.psp.pos.shared.xor;
+package io.github.mralireza82.xor;
 
-import com.psp.pos.shared.baseconversion.ByteEncoding;
+import io.github.mralireza82.baseconversion.ByteEncoding;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvSource;
